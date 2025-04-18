@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products - Flower Shop 🌸</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <style>
+    @media (max-width: 640px) {
+      h1, h2, h3 {
+        font-size: 1.25rem;
+      }
+      table th, table td {
+        font-size: 0.75rem;
+        padding: 0.5rem;
+      }
+    }
+
+    @media (min-width: 641px) and (max-width: 768px) {
+      h1 { font-size: 1.75rem; }
+      h2 { font-size: 1.5rem; }
+      h3 { font-size: 1.125rem; }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.75rem; }
+    }
+
+    @media (min-width: 1025px) {
+      h1 { font-size: 2.25rem; }
+      h2 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body class="bg-pink-50 font-sans">
+
+  <!-- Header -->
+  <header class="bg-pink-100 shadow-md p-4 sticky top-0 z-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-pink-600">Flower Shop 🌸</h1>
+      <nav class="space-x-4 text-sm sm:text-base">
+        <a href="index.html" class="text-pink-700 hover:text-pink-500">Home</a>
+        <a href="about.html" class="text-pink-700 hover:text-pink-500">About Us</a>
+        <a href="contact.html" class="text-pink-700 hover:text-pink-500">Contact Us</a>
+        <a href="product.html" class="text-pink-700 font-semibold">Product</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-pink-200 text-center py-10 px-4 sm:py-12 sm:px-8">
+    <h2 class="text-3xl sm:text-4xl font-bold text-pink-700 mb-2">Our Top Picks for Every Occasion 💐</h2>
+    <p class="text-pink-800 max-w-2xl mx-auto">From roses to cheerful tulips, our floral selection is perfect for weddings, birthdays, and everything in between.</p>
+  </section>
+
+  <!-- Product Cards -->
+  <section class="py-10 px-4">
+    <h2 class="text-2xl sm:text-3xl font-bold text-pink-600 text-center mb-6">Top Trending Bouquets 🌸</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+      <!-- 1 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-4">
+        <img src="https://cdn.pixabay.com/photo/2017/03/31/15/32/roses-2191636_1280.jpg" alt="Pink Rose" class="w-full h-48 object-cover rounded-lg mb-4"/>
+        <h3 class="text-xl font-semibold text-pink-700">Pink Rose Bouquet</h3>
+        <p class="text-pink-600 mb-2">PKR 1,999</p>
+        <button class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg">Shop Now</button>
+      </div>
+
+      <!-- 2 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-4">
+        <img src="https://cdn.avasflowers.net/img/prod_img/avasflowers-spring-tulips--16531.jpg" alt="Tulip" class="w-full h-48 object-cover rounded-lg mb-4"/>
+        <h3 class="text-xl font-semibold text-pink-700">Spring Tulips</h3>
+        <p class="text-pink-600 mb-2">PKR 1,499</p>
+        <button class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg">Shop Now</button>
+      </div>
+
+      <!-- 3 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-4">
+        <img src="https://fromyouflowers.pk/wp-content/uploads/2024/01/b5e6a0f2-2bc7-49df-9847-91c6befa9a2b.jpg" alt="Orchid" class="w-full h-48 object-cover rounded-lg mb-4"/>
+        <h3 class="text-xl font-semibold text-pink-700">Orchid Elegance</h3>
+        <p class="text-pink-600 mb-2">PKR 2,299</p>
+        <button class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg">Shop Now</button>
+      </div>
+
+      <!-- 4 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-4">
+        <img src="https://prestigebotanicals.com/cdn/shop/files/PrestigeStyledLilyBundlecopy_f48a407c-6eae-4ed7-b17d-bec5fed06448.jpg?v=1698188687" alt="Lily" class="w-full h-48 object-cover rounded-lg mb-4"/>
+        <h3 class="text-xl font-semibold text-pink-700">Lily Love</h3>
+        <p class="text-pink-600 mb-2">PKR 1,899</p>
+        <button class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg">Shop Now</button>
+      </div>
+
+      <!-- 5 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-4">
+        <img src="https://media.istockphoto.com/id/1297601262/photo/sunflowers.jpg?s=1024x1024&w=is&k=20&c=4Kb_dy2z_Fx4Up7GlrB6jn4myyPxjAexJPzcEPNHEts=" alt="Sunflower" class="w-full h-48 object-cover rounded-lg mb-4"/>
+        <h3 class="text-xl font-semibold text-pink-700">Sunny Sunflowers</h3>
+        <p class="text-pink-600 mb-2">PKR 1,299</p>
+        <button class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg">Shop Now</button>
+      </div>
+
+      <!-- 6 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-4">
+        <img src="https://en.pimg.jp/048/109/775/1/48109775.jpg" alt="Mixed Colors" class="w-full h-48 object-cover rounded-lg mb-4"/>
+        <h3 class="text-xl font-semibold text-pink-700">Color Burst</h3>
+        <p class="text-pink-600 mb-2">PKR 2,099</p>
+        <button class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg">Shop Now</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Product Table -->
+  <section class="max-w-6xl mx-auto px-4 py-10">
+    <h2 class="text-2xl font-bold text-pink-600 mb-4 text-center sm:text-left">All Products At a Glance 📋</h2>
+    <div class="overflow-x-auto">
+      <table class="w-full border border-pink-200 text-left text-sm sm:text-base">
+        <thead class="bg-pink-100 text-pink-700">
+          <tr>
+            <th class="py-3 px-4 border">Product</th>
+            <th class="py-3 px-4 border">Category</th>
+            <th class="py-3 px-4 border">Occasion</th>
+            <th class="py-3 px-4 border">Availability</th>
+            <th class="py-3 px-4 border">Price (PKR)</th>
+            <th class="py-3 px-4 border">Rating</th>
+            <th class="py-3 px-4 border">Status</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white text-pink-700">
+          <tr class="hover:bg-pink-50">
+            <td class="py-2 px-4 border">Pink Rose Bouquet</td>
+            <td class="py-2 px-4 border">Roses</td>
+            <td class="py-2 px-4 border">wedding</td>
+            <td class="py-2 px-4 border">In Stock</td>
+            <td class="py-2 px-4 border">1,999</td>
+            <td class="py-2 px-4 border">4.8 ★</td>
+            <td class="py-2 px-4 border">Popular</td>
+          </tr>
+          <tr class="hover:bg-pink-50">
+            <td class="py-2 px-4 border">Spring Tulips</td>
+            <td class="py-2 px-4 border">Tulips</td>
+            <td class="py-2 px-4 border">Spring</td>
+            <td class="py-2 px-4 border">In Stock</td>
+            <td class="py-2 px-4 border">1,499</td>
+            <td class="py-2 px-4 border">4.6 ★</td>
+            <td class="py-2 px-4 border">New</td>
+          </tr>
+          <tr class="hover:bg-pink-50">
+            <td class="py-2 px-4 border">Orchid Elegance</td>
+            <td class="py-2 px-4 border">Orchid</td>
+            <td class="py-2 px-4 border">Formal</td>
+            <td class="py-2 px-4 border">Limited</td>
+            <td class="py-2 px-4 border">2,299</td>
+            <td class="py-2 px-4 border">4.7 ★</td>
+            <td class="py-2 px-4 border">Elegant</td>
+          </tr>
+          <tr class="hover:bg-pink-50">
+            <td class="py-2 px-4 border">Lily Love</td>
+            <td class="py-2 px-4 border">Lilies</td>
+            <td class="py-2 px-4 border">Anniversary</td>
+            <td class="py-2 px-4 border">In Stock</td>
+            <td class="py-2 px-4 border">1,899</td>
+            <td class="py-2 px-4 border">4.5 ★</td>
+            <td class="py-2 px-4 border">Best Seller</td>
+          </tr>
+          <tr class="hover:bg-pink-50">
+            <td class="py-2 px-4 border">Sunny Sunflowers</td>
+            <td class="py-2 px-4 border">Sunflowers</td>
+            <td class="py-2 px-4 border">Birthday</td>
+            <td class="py-2 px-4 border">Out of Stock</td>
+            <td class="py-2 px-4 border">1,299</td>
+            <td class="py-2 px-4 border">4.3 ★</td>
+            <td class="py-2 px-4 border">Cheerful</td>
+          </tr>
+          <tr class="hover:bg-pink-50">
+            <td class="py-2 px-4 border">Color Burst</td>
+            <td class="py-2 px-4 border">Mixed</td>
+            <td class="py-2 px-4 border">Festival</td>
+            <td class="py-2 px-4 border">In Stock</td>
+            <td class="py-2 px-4 border">2,099</td>
+            <td class="py-2 px-4 border">4.9 ★</td>
+            <td class="py-2 px-4 border">Top Pick</td>
+          </tr>
+          <tr class="hover:bg-pink-50">
+            <td class="py-2 px-4 border">Daisy Delight</td>
+            <td class="py-2 px-4 border">Daisy</td>
+            <td class="py-2 px-4 border">Casual</td>
+            <td class="py-2 px-4 border">In Stock</td>
+            <td class="py-2 px-4 border">1,399</td>
+            <td class="py-2 px-4 border">4.4 ★</td>
+            <td class="py-2 px-4 border">Fresh</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-pink-100 text-center text-sm text-pink-700 p-4 mt-10">
+    &copy; 2025 Flower Shop 🌸. All rights reserved.
+  </footer>
+
+</body>
+</html>

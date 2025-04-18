@@ -1,0 +1,103 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flower Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin-top: 8px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-text {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body class="bg-pink-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-pink-200 shadow-md p-4 sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center flex-wrap">
+      <h1 class="text-2xl sm:text-3xl font-bold text-pink-700">Flower Shop 🌸</h1>
+      <nav class="space-x-0 sm:space-x-2 text-sm sm:text-base mt-2 sm:mt-0 flex flex-wrap justify-center sm:justify-end w-full sm:w-auto">
+        <a href="index.html" class="hover:text-white hover:bg-pink-500 px-3 py-1 rounded">Home</a>
+        <a href="about.html" class="hover:text-white hover:bg-pink-500 px-3 py-1 rounded">About Us</a>
+        <a href="contact.html" class="hover:text-white hover:bg-pink-500 px-3 py-1 rounded">Contact Us</a>
+        <a href="product.html" class="hover:text-white hover:bg-pink-500 px-3 py-1 rounded">Products</a>
+        <a href="register.html" class="hover:text-white hover:bg-pink-500 px-3 py-1 rounded">Register</a>
+        <a href="login.html" class="hover:text-white hover:bg-pink-500 px-3 py-1 rounded">Login</a>
+        <span class="ml-2 text-pink-700 text-lg">🛒</span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative mt-4">
+    
+    <img src="https://img.freepik.com/free-photo/gift-with-bouquet-flowers-bag-pink-background_23-2148104145.jpg?t=st=1744865635~exp=1744869235~hmac=38b09597b97493f04853abc15275e1b6f3fdec6594c0a6476f7bbeef566d4860&w=996" alt="Hero Flower" class="w-full h-[60vh] object-cover rounded-lg shadow-lg" />
+    <div class="absolute top-1/2 left-4 sm:left-8 transform -translate-y-1/2 text-white bg-pink-700 bg-opacity-70 p-4 rounded-lg animate-pulse max-w-[90%] sm:max-w-md">
+      <h2 class="hero-text text-xl sm:text-2xl md:text-4xl font-bold">Brighten Someone's Day with Flowers</h2>
+      <p class="mt-2 text-sm md:text-base">Fresh, elegant, and handpicked just for you.</p>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="py-10 px-4 max-w-6xl mx-auto">
+    <h2 class="text-2xl font-semibold text-center text-pink-700 mb-6">Our Beautiful Collection</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+
+      <!-- Product 1 -->
+      <div class="bg-white rounded-xl shadow-lg p-4 text-center hover:scale-105 transition">
+        <img src="https://img.freepik.com/free-psd/beautiful-rose-studio_23-2151841231.jpg?t=st=1744865779~exp=1744869379~hmac=b68b0f053229179192572369416f6117bfbbdd618903a86554b2287242a37ab9&w=740" alt="Pink Vase" class="rounded-lg h-40 mx-auto object-cover" />
+        <h3 class="text-pink-700 font-medium mt-2">Pink Table Blooms</h3>
+        <p class="text-sm text-gray-500">Price: Rs. 1,999</p>
+        <button class="mt-2 bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Shop Now</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="bg-white rounded-xl shadow-lg p-4 text-center hover:scale-105 transition">
+        <img src="https://img.freepik.com/premium-photo/beautiful-roses-pot-windowsill_392895-186681.jpg?w=996" alt="Pink Roses" class="rounded-lg h-40 mx-auto object-cover" />
+        <h3 class="text-pink-700 font-medium mt-2">Wrapped Pink Roses</h3>
+        <p class="text-sm text-gray-500">Price: Rs. 2,450</p>
+        <button class="mt-2 bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Shop Now</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="bg-white rounded-xl shadow-lg p-4 text-center hover:scale-105 transition">
+        <img src="https://img.freepik.com/free-photo/close-up-bunch-pretty-red-roses_23-2148387993.jpg?t=st=1744865970~exp=1744869570~hmac=e1957ec667e6e6f6b120720573609106d5fb837224047a8a29b217f070431823&w=996" alt="Red Roses" class="rounded-lg h-40 mx-auto object-cover" />
+        <h3 class="text-pink-700 font-medium mt-2">Red Rose Love</h3>
+        <p class="text-sm text-gray-500">Price: Rs. 2,999</p>
+        <button class="mt-2 bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Shop Now</button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="bg-white rounded-xl shadow-lg p-4 text-center hover:scale-105 transition">
+        <img src="https://5.imimg.com/data5/NO/SR/GLADMIN-57389521/love-at-first-sight-1000x1000.png" alt="Red Rose Basket" class="rounded-lg h-40 mx-auto object-cover" />
+        <h3 class="text-pink-700 font-medium mt-2">Basket of Roses</h3>
+        <p class="text-sm text-gray-500">Price: Rs. 3,400</p>
+        <button class="mt-2 bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Shop Now</button>
+      </div>
+
+    </div>
+
+    <p class="text-center text-sm text-gray-600 mt-8">We deliver fresh flowers all across the city — perfect for any occasion!</p>
+  </section>
+
+  <!-- Spacer -->
+  <div class="h-24"></div>
+
+  <!-- Footer -->
+  <footer class="bg-pink-200 text-center py-4 mt-10">
+    <p class="text-pink-800">&copy; 2025 Flower Shop. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
